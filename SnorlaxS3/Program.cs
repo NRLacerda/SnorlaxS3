@@ -12,8 +12,10 @@ var region = RegionEndpoint.USEast1; // Replace YOUR_REGION with the desired reg
 
 // Create the S3 client
 var s3Client = new AmazonS3Client(credentials, region);
-
+Console.WriteLine("------------------------------------------------------------------");
 Console.WriteLine("Bem vindo ao SnorlaxS3, software para automatizar seus backups");
+Console.WriteLine("------------------------------------------------------------------");
+
 
 var listResponse = await MyListBucketsAsync(s3Client);
 string[] bucketNamesArray = new string[listResponse.Buckets.Count];
@@ -27,7 +29,11 @@ foreach (S3Bucket bucket in listResponse.Buckets)
 
 Console.WriteLine($"Quantidade de buckets: {listResponse.Buckets.Count}");
 int indexBucket = 0;
-foreach(S3Bucket bucket in listResponse.Buckets)
+Console.WriteLine("------------------------------------------------------------------");
+Console.WriteLine("ID   |                  Nome");
+Console.WriteLine("------------------------------------------------------------------");
+
+foreach (S3Bucket bucket in listResponse.Buckets)
 {
     Console.WriteLine($"ID {indexBucket}   Bucket name {bucket.BucketName}");
     indexBucket++;
@@ -48,16 +54,25 @@ TransferUtilityUploadRequest request = new TransferUtilityUploadRequest();
 request.BucketName = bucketName;
 request.Key = "acesskeys"; //file name up in S3
 request.FilePath = "F:\\S3\\accesskeys.txt"; //local file name
-try
+Console.WriteLine($"Deseja continuar a operação? Será feito o upload de arquivos no Bucket:  {bucketName}");
+Console.WriteLine("Caso deseje continuar aperte a tecla Y, do contrário aperte ESC");
+if (Console.ReadKey().Key == ConsoleKey.Y)
 {
-    utility.Upload(request); //commensing the transfer
-    Console.WriteLine($"\nBucket selecionado -> {request.BucketName}");
-    Console.WriteLine("Upload feito com sucesso!");
+    try
+    {
+        utility.Upload(request); // Pusha os arquivos
+        Console.WriteLine("\n Upload feito com sucesso!");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"\nHouve algum erro durante o upload. \n {ex} ");
+    }
 }
-catch(Exception ex)
+else
 {
-    Console.WriteLine($"\nHouve algum erro durante o upload. \n {ex} ");
+    Console.WriteLine("Operação Cancelada.");
 }
+
 
 //Esse read line está aqui para fins de teste, ele não faz nada
 Console.ReadLine();
