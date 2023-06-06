@@ -7,7 +7,7 @@ using Amazon.S3.Model;
 using Amazon.S3.Transfer;
 
 // Specify your AWS credentials and region
-var credentials = new Amazon.Runtime.BasicAWSCredentials("AKIA37OQ3BN2IFTTEWHT", "5AM32tJLojsINIOGJW4SRBiKDmOAYpbEKBth2CMC");
+var credentials = new Amazon.Runtime.BasicAWSCredentials("nem nos seus sonhos vc", "pega esse dado irmao");
 var region = RegionEndpoint.USEast1; 
 
 // Create the S3 client
