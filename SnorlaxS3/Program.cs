@@ -38,6 +38,7 @@ foreach (S3Bucket bucket in listResponse.Buckets)
     Console.WriteLine($"ID {indexBucket}   Bucket name {bucket.BucketName}");
     indexBucket++;
 }
+Console.WriteLine("------------------------------------------------------------------");
 Console.WriteLine("Escolha um bucket para fazer o upload de seus arquivos (use o ID):");
 int bucketChoice = Convert.ToInt32(Console.ReadLine()); 
 string bucketName = bucketNamesArray[bucketChoice];
@@ -50,10 +51,12 @@ static async Task<ListBucketsResponse> MyListBucketsAsync(IAmazonS3 s3Client)
 // Passa as config do Client para instanciar o Transferidor
 TransferUtility utility = new TransferUtility(s3Client);
 // Cria um upload Request
-TransferUtilityUploadRequest request = new TransferUtilityUploadRequest();
-request.BucketName = bucketName;
-request.Key = "acesskeys"; //file name up in S3
-request.FilePath = "F:\\S3\\accesskeys.txt"; //local file name
+TransferUtilityUploadRequest request = new()
+{
+    BucketName = bucketName,
+    Key = "acesskeys", //file name up in S3
+    FilePath = "F:\\S3\\accesskeys.txt" //local file name
+};
 Console.WriteLine($"Deseja continuar a operação? Será feito o upload de arquivos no Bucket:  {bucketName}");
 Console.WriteLine("Caso deseje continuar aperte a tecla Y, do contrário aperte ESC");
 if (Console.ReadKey().Key == ConsoleKey.Y)
@@ -74,5 +77,5 @@ else
 }
 
 
-//Esse read line está aqui para fins de teste, ele não faz nada
+//Esse read line está aqui pra impedir o app de fechar, ele não faz nada
 Console.ReadLine();
