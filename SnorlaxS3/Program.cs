@@ -58,9 +58,9 @@ TransferUtility utility = new TransferUtility(s3Client);
 TransferUtilityUploadDirectoryRequest request = new()
 {
     BucketName = bucketName,
-    KeyPrefix = "Snorlax/", //Essa será a pasta + nome do arquivo na AWS
-    SearchOption = SearchOption.AllDirectories, // Upload all files in the directory recursively
-    Directory = filePath, // Path to the local directory you want to upload
+    KeyPrefix = "Snorlax/", //Essa será a pasta + nome do arquivo na AWS (se vc deixar apenas o nome da pasta o nome dos arquivos finais será o original
+    SearchOption = SearchOption.AllDirectories, // Itera todos arquivos do diretório informado, mandando tudo
+    Directory = filePath, // Caminho local dos arquivos
 };
 Console.WriteLine($"Deseja continuar a operação? Será feito o upload de arquivos no Bucket:\n  {bucketName}");
 Console.WriteLine("Caso deseje continuar aperte a tecla Y, do contrário aperte ESC");
