@@ -44,7 +44,7 @@ internal class Program
         }
 
         Console.WriteLine($"Quantidade de buckets: {listResponse.Buckets.Count}");
-        int indexBucket = 0;
+        int indexBucket = 1;
         Console.WriteLine("------------------------------------------------------------------");
         Console.WriteLine("ID    |                  Nome");
         Console.WriteLine("------------------------------------------------------------------");
