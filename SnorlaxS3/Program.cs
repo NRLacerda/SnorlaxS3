@@ -9,9 +9,6 @@ using Amazon.S3.Transfer;
 using Microsoft.Extensions.Configuration;
 
 
-// Specify your AWS credentials and region
-
-
 internal class Program
 {
     private static async Task Main(string[] args)
