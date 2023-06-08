@@ -47,6 +47,14 @@
             "AWSSDK.S3": {
               "target": "Package",
               "version": "[3.7.104.28, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

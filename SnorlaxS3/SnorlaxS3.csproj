@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <PackageReference Include="AWSSDK.S3" Version="3.7.104.28" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
   </ItemGroup>
 
 </Project>

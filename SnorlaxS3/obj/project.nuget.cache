@@ -1,11 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "zBvbU9JC3kyPMEHk38oOd/N//HUDdu7kMcclpaO/nhY2VZx6AZch35w8zLH6V4B7B9nX31yPCW0IhRiG6f0RCA==",
+  "dgSpecHash": "99YWp7X+ii5vMPzB9bGso9Y/LuXFkP4RvtQpjRPuG6tL0um97+Wfkl68cVFo1pC/OrDaoXL+cLlyoXg2T6UdMg==",
   "success": true,
   "projectFilePath": "F:\\PROJETOS\\SnorlaxS3\\SnorlaxS3\\SnorlaxS3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\awssdk.core\\3.7.107.2\\awssdk.core.3.7.107.2.nupkg.sha512",
-    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\awssdk.s3\\3.7.104.28\\awssdk.s3.3.7.104.28.nupkg.sha512"
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\awssdk.s3\\3.7.104.28\\awssdk.s3.3.7.104.28.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\7.0.0\\microsoft.extensions.configuration.fileextensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\microsoft.extensions.configuration.json\\7.0.0\\microsoft.extensions.configuration.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\nicolas.BRAYTON\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
