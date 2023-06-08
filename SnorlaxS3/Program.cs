@@ -20,11 +20,9 @@ internal class Program
         // Build the configuration
         var configuration = builder.Build();
 
-        string? AccessKey = configuration["AppSettings:accesskey"];
-        string? SecurityAccessKey = configuration["AppSettings:secretkey"];
-
-        var credentials = new Amazon.Runtime.BasicAWSCredentials(AccessKey, SecurityAccessKey);
-        var region = RegionEndpoint.USEast1;
+// Specify your AWS credentials and region
+var credentials = new Amazon.Runtime.BasicAWSCredentials("AKIA37OQ3BN2IFTTEWHT", "5AM32tJLojsINIOGJW4SRBiKDmOAYpbEKBth2CMC");
+var region = RegionEndpoint.USEast1; 
 
         // Create the S3 client
         var s3Client = new AmazonS3Client(credentials, region);
