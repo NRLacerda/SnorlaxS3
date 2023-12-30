@@ -1,5 +1,5 @@
 # SnorlaxS3
-Automation to S3 to backup files in an certain range that you determine.
+Automate your backup on S3 with this application.
 
 Why the name Snorlax? because with REST you can retrieve your healthy, in that case your files
 <h2> SnorlaxS3</h2>
